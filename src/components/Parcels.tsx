@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface ParcelsData {
   id: number;
@@ -80,7 +81,7 @@ export const parcelsData: ParcelsData[] = [
 }) => {
   return ( */
 
-  
+
 const Parcels = ({
   sender,
   eta,
@@ -101,7 +102,13 @@ const Parcels = ({
         </p>
         <p className="text-left text-sm  flex w-full">
           <span className="my-auto pr-2">
-            <img src="/instabox.png" alt="instabox-logga" className="w-4" />
+            <Image
+              src="/instabox.png"
+              alt="instabox-logga"
+              className="w-4"
+              width={16}
+              height={16}
+            />
           </span>
           {location_name}
         </p>
