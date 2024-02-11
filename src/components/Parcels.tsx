@@ -73,7 +73,7 @@ export const parcelsData: ParcelsData[] = [
   },
 ];
 
-/*const Parcels: React.FC<ParcelsData> = ({
+/*const Parcels:P React.FC<arcelsData> = ({
   sender,
   eta,
   status,
