@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import { parcelsData } from "@/components/Parcels";
 import Link from "next/link";
 
-const parcel = () => {
+const Parcel = () => {
   return (
     <main className="flex flex-col mt-12 gap-y-4">
       {parcelsData.map((parcel) => {
@@ -19,4 +19,4 @@ const parcel = () => {
   );
 };
 
-export default parcel;
+export default Parcel;
