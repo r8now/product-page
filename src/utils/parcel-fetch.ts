@@ -24,7 +24,8 @@ export default async function getAllParcelData(): Promise<Array<Parcel>> {
     if (!res.ok) {
       throw new Error("Failed to fetch parcels");
     }
-  const parcelData: Array<Parcel> = await res.json();
+    const parcelData: Array<Parcel> = await res.json();
+
     return parcelData;
   } catch (error) {
     console.error("Error fetching parcel data:", error);

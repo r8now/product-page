@@ -1,5 +1,3 @@
-// [id].js under pages/parcel directory
-
 import getAllParcelData from "@/utils/parcel-fetch";
 import { GetStaticProps, GetStaticPaths, InferGetStaticPropsType } from "next";
 import Parcels from "@/components/Parcels";
@@ -27,7 +25,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   return {
     props: { parcel },
-    revalidate: 3600, // Regenerate the page at most once every hour
+    revalidate: 3600, // Regenerate the page at most once every hour, but does not work...
   };
 };
 
