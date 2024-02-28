@@ -2,6 +2,15 @@ import getAllParcelData from "@/utils/parcel-fetch";
 import { GetStaticProps, GetStaticPaths, InferGetStaticPropsType } from "next";
 import Parcels from "@/components/Parcels";
 
+//fix it for me with async function
+
+async function  getInfo ()  {
+  const parcelData = await getAllParcelData();
+  console.log(parcelData)
+
+  return await parcelData;
+}
+getInfo(); 
 export const getStaticPaths: GetStaticPaths = async () => {
   const parcelData = await getAllParcelData();
 
